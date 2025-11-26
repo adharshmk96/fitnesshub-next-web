@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Dumbbell, Menu, X } from "lucide-react"
 import { useState } from "react"
+import { ModeToggle } from "./theme/theme-switch"
 
 export function LandingHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -60,6 +61,7 @@ export function LandingHeader() {
           <Button asChild>
             <a href="/signup">Get Started</a>
           </Button>
+          <ModeToggle />
         </div>
 
         {/* Mobile Menu Button */}
