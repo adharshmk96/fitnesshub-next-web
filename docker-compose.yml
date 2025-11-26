@@ -8,7 +8,7 @@ services:
       POSTGRES_PASSWORD: fitnesshub
       POSTGRES_DB: fitnesshub
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - ./_container/postgres_data:/var/lib/postgresql/data
 
-volumes:
-  postgres_data:
+
+  
